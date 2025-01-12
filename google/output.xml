@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on darwin)" generated="2025-01-11T16:55:14.311117" rpa="false" schemaversion="5">
+<suite id="s1" name="Google2" source="/Users/kimmy/robotframework_workshop/google/google2.robot">
+<test id="s1-t1" name="ทดสอบใส่คำค้น PIM ควรเจอ สถาบันการจัดการปัญญาภิวัฒน์" line="8">
+<kw name="open browser และเข้า google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-11T16:55:14.407517" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-11T16:55:14.407313" elapsed="2.877144"/>
+</kw>
+<status status="PASS" start="2025-01-11T16:55:14.406775" elapsed="2.877940"/>
+</kw>
+<kw name="ใส่คำค้นหา">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-11T16:55:17.285678" level="INFO">Typing text 'PIM' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>PIM</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-11T16:55:17.285364" elapsed="0.104114"/>
+</kw>
+<status status="PASS" start="2025-01-11T16:55:17.285050" elapsed="0.104613"/>
+</kw>
+<kw name="กดปุ่ม Enter">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-11T16:55:17.390618" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg time="2025-01-11T16:55:17.390728" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg time="2025-01-11T16:55:17.391173" level="INFO">Releasing special key RETURN.</msg>
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-11T16:55:17.390249" elapsed="4.574023"/>
+</kw>
+<status status="PASS" start="2025-01-11T16:55:17.389913" elapsed="4.574464"/>
+</kw>
+<kw name="ตรวจสอบผลการค้นหา">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-01-11T16:55:21.965144" level="FAIL">ValueError: Argument 'timeout' got value 'สถาบันการจัดการปัญญาภิวัฒน์' that cannot be converted to timedelta or None.</msg>
+<arg>text</arg>
+<arg>สถาบันการจัดการปัญญาภิวัฒน์</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-01-11T16:55:21.964774" elapsed="0.000614">ValueError: Argument 'timeout' got value 'สถาบันการจัดการปัญญาภิวัฒน์' that cannot be converted to timedelta or None.</status>
+</kw>
+<status status="FAIL" start="2025-01-11T16:55:21.964563" elapsed="0.000950">ValueError: Argument 'timeout' got value 'สถาบันการจัดการปัญญาภิวัฒน์' that cannot be converted to timedelta or None.</status>
+</kw>
+<status status="FAIL" start="2025-01-11T16:55:14.404841" elapsed="7.560840">ValueError: Argument 'timeout' got value 'สถาบันการจัดการปัญญาภิวัฒน์' that cannot be converted to timedelta or None.</status>
+</test>
+<status status="FAIL" start="2025-01-11T16:55:14.311960" elapsed="7.654065"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Google2">Google2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

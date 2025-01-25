@@ -1,52 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on darwin)" generated="2025-01-11T16:55:14.311117" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on darwin)" generated="2025-01-18T10:54:12.266916" rpa="false" schemaversion="5">
 <suite id="s1" name="Google2" source="/Users/kimmy/robotframework_workshop/google/google2.robot">
 <test id="s1-t1" name="ทดสอบใส่คำค้น PIM ควรเจอ สถาบันการจัดการปัญญาภิวัฒน์" line="8">
 <kw name="open browser และเข้า google">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-11T16:55:14.407517" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<msg time="2025-01-18T10:54:12.363083" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-11T16:55:14.407313" elapsed="2.877144"/>
+<status status="PASS" start="2025-01-18T10:54:12.362876" elapsed="3.051517"/>
 </kw>
-<status status="PASS" start="2025-01-11T16:55:14.406775" elapsed="2.877940"/>
+<status status="PASS" start="2025-01-18T10:54:12.362342" elapsed="3.052387"/>
 </kw>
 <kw name="ใส่คำค้นหา">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-11T16:55:17.285678" level="INFO">Typing text 'PIM' into text field 'name=q'.</msg>
+<msg time="2025-01-18T10:54:15.416015" level="INFO">Typing text 'PIM' into text field 'name=q'.</msg>
 <arg>name=q</arg>
 <arg>PIM</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-11T16:55:17.285364" elapsed="0.104114"/>
+<status status="PASS" start="2025-01-18T10:54:15.415663" elapsed="0.121989"/>
 </kw>
-<status status="PASS" start="2025-01-11T16:55:17.285050" elapsed="0.104613"/>
+<status status="PASS" start="2025-01-18T10:54:15.415319" elapsed="0.122443"/>
 </kw>
 <kw name="กดปุ่ม Enter">
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-01-11T16:55:17.390618" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
-<msg time="2025-01-11T16:55:17.390728" level="INFO">Pressing special key RETURN to browser.</msg>
-<msg time="2025-01-11T16:55:17.391173" level="INFO">Releasing special key RETURN.</msg>
+<msg time="2025-01-18T10:54:15.538520" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg time="2025-01-18T10:54:15.538630" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg time="2025-01-18T10:54:15.538989" level="INFO">Releasing special key RETURN.</msg>
 <arg>None</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-01-11T16:55:17.390249" elapsed="4.574023"/>
+<status status="PASS" start="2025-01-18T10:54:15.538199" elapsed="2.689077"/>
 </kw>
-<status status="PASS" start="2025-01-11T16:55:17.389913" elapsed="4.574464"/>
+<status status="PASS" start="2025-01-18T10:54:15.537951" elapsed="2.689505"/>
 </kw>
 <kw name="ตรวจสอบผลการค้นหา">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<msg time="2025-01-11T16:55:21.965144" level="FAIL">ValueError: Argument 'timeout' got value 'สถาบันการจัดการปัญญาภิวัฒน์' that cannot be converted to timedelta or None.</msg>
-<arg>text</arg>
+<msg time="2025-01-18T10:54:19.816741" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.266)
+Stacktrace:
+0   chromedriver                        0x0000000104c9e138 cxxbridge1$str$ptr + 3653888
+1   chromedriver                        0x0000000104c96988 cxxbridge1$str$ptr + 3623248
+2   chromedriver                        0x00000001046fc968 cxxbridge1$string$len + 89228
+3   chromedriver                        0x00000001046d7e44 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780
+4   chromedriver                        0x0000000104766c84 cxxbridge1$string$len + 524200
+5   chromedriver                        0x0000000104779b60 cxxbridge1$string$len + 601732
+6   chromedriver                        0x0000000104735564 cxxbridge1$string$len + 321672
+7   chromedriver                        0x00000001047361b4 cxxbridge1$string$len + 324824
+8   chromedriver                        0x0000000104c68fc0 cxxbridge1$str$ptr + 3436424
+9   chromedriver                        0x0000000104c6c2dc cxxbridge1$str$ptr + 3449508
+10  chromedriver                        0x0000000104c4fe60 cxxbridge1$str$ptr + 3333672
+11  chromedriver                        0x0000000104c6cb9c cxxbridge1$str$ptr + 3451748
+12  chromedriver                        0x0000000104c41678 cxxbridge1$str$ptr + 3274304
+13  chromedriver                        0x0000000104c872b4 cxxbridge1$str$ptr + 3560060
+14  chromedriver                        0x0000000104c87430 cxxbridge1$str$ptr + 3560440
+15  chromedriver                        0x0000000104c965fc cxxbridge1$str$ptr + 3622340
+16  libsystem_pthread.dylib             0x0000000182e49f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000182e44d34 thread_start + 8
+</msg>
+<msg time="2025-01-18T10:54:19.817270" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.266)
+Stacktrace:
+0   chromedriver                        0x0000000104c9e138 cxxbridge1$str$ptr + 3653888
+1   chromedriver                        0x0000000104c96988 cxxbridge1$str$ptr + 3623248
+2   chromedriver                        0x00000001046fc968 cxxbridge1$string$len + 89228
+3   chromedriver                        0x00000001046d7e44 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780
+4   chromedriver                        0x0000000104766c84 cxxbridge1$string$len + 524200
+5   chromedriver                        0x0000000104779b60 cxxbridge1$string$len + 601732
+6   chromedriver                        0x0000000104735564 cxxbridge1$string$len + 321672
+7   chromedriver                        0x00000001047361b4 cxxbridge1$string$len + 324824
+8   chromedriver                        0x0000000104c68fc0 cxxbridge1$str$ptr + 3436424
+9   chromedriver                        0x0000000104c6c2dc cxxbridge1$str$ptr + 3449508
+10  chromedriver                        0x0000000104c4fe60 cxxbridge1$str$ptr + 3333672
+11  chromedriver                        0x0000000104c6cb9c cxxbridge1$str$ptr + 3451748
+12  chromedriver                        0x0000000104c41678 cxxbridge1$str$ptr + 3274304
+13  chromedriver                        0x0000000104c872b4 cxxbridge1$str$ptr + 3560060
+14  chromedriver                        0x0000000104c87430 cxxbridge1$str$ptr + 3560440
+15  chromedriver                        0x0000000104c965fc cxxbridge1$str$ptr + 3622340
+16  libsystem_pthread.dylib             0x0000000182e49f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000182e44d34 thread_start + 8
+</msg>
 <arg>สถาบันการจัดการปัญญาภิวัฒน์</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="FAIL" start="2025-01-11T16:55:21.964774" elapsed="0.000614">ValueError: Argument 'timeout' got value 'สถาบันการจัดการปัญญาภิวัฒน์' that cannot be converted to timedelta or None.</status>
+<status status="FAIL" start="2025-01-18T10:54:18.227870" elapsed="1.594868">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.266)
+Stacktrace:
+0   chromedriver                        0x0000000104c9e138 cxxbridge1$str$ptr + 3653888
+1   chromedriver                        0x0000000104c96988 cxxbridge1$str$ptr + 3623248
+2   chromedriver                        0x00000001046fc968 cxxbridge1$string$len + 89228
+3   chromedriver                        0x00000001046d7e44 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780
+4   chromedriver                        0x0000000104766c84 cxxbridge1$string$len + 524200
+5   chromedriver                        0x0000000104779b60 cxxbridge1$string$len + 601732
+6   chromedriver                        0x0000000104735564 cxxbridge1$string$len + 321672
+7   chromedriver                        0x00000001047361b4 cxxbridge1$string$len + 324824
+8   chromedriver                        0x0000000104c68fc0 cxxbridge1$str$ptr + 3436424
+9   chromedriver                        0x0000000104c6c2dc cxxbridge1$str$ptr + 3449508
+10  chromedriver                        0x0000000104c4fe60 cxxbridge1$str$ptr + 3333672
+11  chromedriver                        0x0000000104c6cb9c cxxbridge1$str$ptr + 3451748
+12  chromedriver                        0x0000000104c41678 cxxbridge1$str$ptr + 3274304
+13  chromedriver                        0x0000000104c872b4 cxxbridge1$str$ptr + 3560060
+14  chromedriver                        0x0000000104c87430 cxxbridge1$str$ptr + 3560440
+15  chromedriver                        0x0000000104c965fc cxxbridge1$str$ptr + 3622340
+16  libsystem_pthread.dylib             0x0000000182e49f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000182e44d34 thread_start + 8
+</status>
 </kw>
-<status status="FAIL" start="2025-01-11T16:55:21.964563" elapsed="0.000950">ValueError: Argument 'timeout' got value 'สถาบันการจัดการปัญญาภิวัฒน์' that cannot be converted to timedelta or None.</status>
+<status status="FAIL" start="2025-01-18T10:54:18.227657" elapsed="1.595293">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.266)
+Stacktrace:
+0   chromedriver                        0x0000000104c9e138 cxxbridge1$str$ptr + 3653888
+1   chromedriver                        0x0000000104c96988 cxxbridge1$str$ptr + 3623248
+2   chromedriver                        0x00000001046fc968 cxxbridge1$string$len + 89228
+3   chromedriver                        0x00000001046d7e44 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780
+4   chromedriver                        0x0000000104766c84 cxxbridge1$string$len + 524200
+5   chromedriver                        0x0000000104779b60 cxxbridge1$string$len + 601732
+6   chromedriver                        0x0000000104735564 cxxbridge1$string$len + 321672
+7   chromedriver                        0x00000001047361b4 cxxbridge1$string$len + 324824
+8   chromedriver                        0x0000000104c68fc0 cxxbridge1$str$ptr + 3436424
+9   chromedriver                        0x0000000104c6c2dc cxxbridge1$str$ptr + 3449508
+10  chromedriver                        0x0000000104c4fe60 cxxbridge1$str$ptr + 3333672
+11  chromedriver                        0x0000000104c6cb9c cxxbridge1$str$ptr + 3451748
+12  chromedriver                        0x0000000104c41678 cxxbridge1$str$ptr + 3274304
+13  chromedriver                        0x0000000104c872b4 cxxbridge1$str$ptr + 3560060
+14  chromedriver                        0x0000000104c87430 cxxbridge1$str$ptr + 3560440
+15  chromedriver                        0x0000000104c965fc cxxbridge1$str$ptr + 3622340
+16  libsystem_pthread.dylib             0x0000000182e49f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000182e44d34 thread_start + 8
+</status>
 </kw>
-<status status="FAIL" start="2025-01-11T16:55:14.404841" elapsed="7.560840">ValueError: Argument 'timeout' got value 'สถาบันการจัดการปัญญาภิวัฒน์' that cannot be converted to timedelta or None.</status>
+<status status="FAIL" start="2025-01-18T10:54:12.360410" elapsed="7.462866">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.266)
+Stacktrace:
+0   chromedriver                        0x0000000104c9e138 cxxbridge1$str$ptr + 3653888
+1   chromedriver                        0x0000000104c96988 cxxbridge1$str$ptr + 3623248
+2   chromedriver                        0x00000001046fc968 cxxbridge1$string$len + 89228
+3   chromedriver                        0x00000001046d7e44 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780
+4   chromedriver                        0x0000000104766c84 cxxbridge1$string$len + 524200
+5   chromedriver                        0x0000000104779b60 cxxbridge1$string$len + 601732
+6   chromedriver                        0x0000000104735564 cxxbridge1$string$len + 321672
+7   chromedriver                        0x00000001047361b4 cxxbridge1$string$len + 324824
+8   chromedriver                        0x0000000104c68fc0 cxxbridge1$str$ptr + 3436424
+9   chromedriver                        0x0000000104c6c2dc cxxbridge1$str$ptr + 3449508
+10  chromedriver                        0x0000000104c4fe60 cxxbridge1$str$ptr + 3333672
+11  chromedriver                        0x0000000104c6cb9c cxxbridge1$str$ptr + 3451748
+12  chromedriver                        0x0000000104c41678 cxxbridge1$str$ptr + 3274304
+13  chromedriver                        0x0000000104c872b4 cxxbridge1$str$ptr + 3560060
+14  chromedriver                        0x0000000104c87430 cxxbridge1$str$ptr + 3560440
+15  chromedriver                        0x0000000104c965fc cxxbridge1$str$ptr + 3622340
+16  libsystem_pthread.dylib             0x0000000182e49f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000182e44d34 thread_start + 8
+</status>
 </test>
-<status status="FAIL" start="2025-01-11T16:55:14.311960" elapsed="7.654065"/>
+<status status="FAIL" start="2025-01-18T10:54:12.267829" elapsed="7.556198"/>
 </suite>
 <statistics>
 <total>
@@ -59,5 +169,28 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2025-01-18T10:54:19.816741" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.266)
+Stacktrace:
+0   chromedriver                        0x0000000104c9e138 cxxbridge1$str$ptr + 3653888
+1   chromedriver                        0x0000000104c96988 cxxbridge1$str$ptr + 3623248
+2   chromedriver                        0x00000001046fc968 cxxbridge1$string$len + 89228
+3   chromedriver                        0x00000001046d7e44 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780
+4   chromedriver                        0x0000000104766c84 cxxbridge1$string$len + 524200
+5   chromedriver                        0x0000000104779b60 cxxbridge1$string$len + 601732
+6   chromedriver                        0x0000000104735564 cxxbridge1$string$len + 321672
+7   chromedriver                        0x00000001047361b4 cxxbridge1$string$len + 324824
+8   chromedriver                        0x0000000104c68fc0 cxxbridge1$str$ptr + 3436424
+9   chromedriver                        0x0000000104c6c2dc cxxbridge1$str$ptr + 3449508
+10  chromedriver                        0x0000000104c4fe60 cxxbridge1$str$ptr + 3333672
+11  chromedriver                        0x0000000104c6cb9c cxxbridge1$str$ptr + 3451748
+12  chromedriver                        0x0000000104c41678 cxxbridge1$str$ptr + 3274304
+13  chromedriver                        0x0000000104c872b4 cxxbridge1$str$ptr + 3560060
+14  chromedriver                        0x0000000104c87430 cxxbridge1$str$ptr + 3560440
+15  chromedriver                        0x0000000104c965fc cxxbridge1$str$ptr + 3622340
+16  libsystem_pthread.dylib             0x0000000182e49f94 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000182e44d34 thread_start + 8
+</msg>
 </errors>
 </robot>

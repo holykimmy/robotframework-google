@@ -21,6 +21,6 @@ open browser และเข้า google
     Press Keys    None    RETURN    
 
 ตรวจสอบผลการค้นหา
-    Wait Until Page Contains    text    สถาบันการจัดการปัญญาภิวัฒน์
+    Wait Until Page Contains    สถาบันการจัดการปัญญาภิวัฒน์
 
 

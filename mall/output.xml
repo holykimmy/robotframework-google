@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on darwin)" generated="2025-01-25T17:53:55.429302" rpa="false" schemaversion="5">
+<suite id="s1" name="Mall Creditcard Success" source="/Users/kimmy/robotframework_workshop/mall/mall_creditcard_success.robot">
+<test id="s1-t1" name="ทดสอบซื้อสินค้าและชำระเงินด้วย credit card ของ visa และชำระเงินสำเร็จ" line="13">
+<kw name="open web browser to shoppingmall" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-25T17:53:55.558730" level="INFO">Opening browser 'chrome' to base url 'http://165.22.255.65/product/list'.</msg>
+<arg>url=${DEV_URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-25T17:53:55.558520" elapsed="2.031057"/>
+</kw>
+<status status="PASS" start="2025-01-25T17:53:55.558004" elapsed="2.031904"/>
+</kw>
+<kw name="ค้นหาสินค้าด้วย คำค้นหา">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-25T17:53:57.591555" level="INFO">Typing text 'bic' into text field 'id=search-product-input'.</msg>
+<msg time="2025-01-25T17:53:57.987299" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-25T17:53:57.987474" level="FAIL">Element with locator 'id=search-product-input' not found.</msg>
+<arg>id=search-product-input</arg>
+<arg>${search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-25T17:53:57.590988" elapsed="0.399412">Element with locator 'id=search-product-input' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=search-product-btn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-25T17:53:57.990565" elapsed="0.000027"/>
+</kw>
+<arg>bic</arg>
+<status status="FAIL" start="2025-01-25T17:53:57.590475" elapsed="0.400220">Element with locator 'id=search-product-input' not found.</status>
+</kw>
+<kw name="ตรวจสอบผลการค้นหา">
+<arg>Balance Training Bicycle</arg>
+<arg>4,314.60</arg>
+<status status="NOT RUN" start="2025-01-25T17:53:57.990864" elapsed="0.000025"/>
+</kw>
+<kw name="เลือกดูสินค้า">
+<status status="NOT RUN" start="2025-01-25T17:53:57.990987" elapsed="0.000019"/>
+</kw>
+<kw name="ตรวจสอบจำนวนแต้มต่อช้ินที่จะได้รับของ">
+<arg>43 Points</arg>
+<status status="NOT RUN" start="2025-01-25T17:53:57.991089" elapsed="0.000018"/>
+</kw>
+<kw name="เพิ่มจำนวนสินค้าที่ต้องการซื้อ">
+<status status="NOT RUN" start="2025-01-25T17:53:57.991190" elapsed="0.000015"/>
+</kw>
+<kw name="เพิ่มสินค้าลงตระกร้า">
+<arg>1</arg>
+<status status="NOT RUN" start="2025-01-25T17:53:57.991274" elapsed="0.000015"/>
+</kw>
+<kw name="ตรวจสอบจำนวนแต้มต่อชิ้นที่จะได้รับของสินค้า">
+<arg>43 Points</arg>
+<status status="NOT RUN" start="2025-01-25T17:53:57.991361" elapsed="0.000014"/>
+</kw>
+<kw name="check out">
+<status status="NOT RUN" start="2025-01-25T17:53:57.991443" elapsed="0.000014"/>
+</kw>
+<kw name="ใส่ที่อยู่จัดส่ง">
+<status status="NOT RUN" start="2025-01-25T17:53:57.991581" elapsed="0.000015"/>
+</kw>
+<kw name="เลือกวิธีจัดส่งสินค้า">
+<status status="NOT RUN" start="2025-01-25T17:53:57.991661" elapsed="0.000016"/>
+</kw>
+<kw name="ตรวจสอบค่าจัดส่งของ kerry เท่ากันกับ 50.00 บาท">
+<status status="NOT RUN" start="2025-01-25T17:53:57.991742" elapsed="0.000014"/>
+</kw>
+<kw name="เลือกช่องทางการชำระเงินแบบ VISA Credit CArd">
+<status status="NOT RUN" start="2025-01-25T17:53:57.991831" elapsed="0.000016"/>
+</kw>
+<status status="FAIL" start="2025-01-25T17:53:55.555866" elapsed="2.436105">Element with locator 'id=search-product-input' not found.</status>
+</test>
+<status status="FAIL" start="2025-01-25T17:53:55.430627" elapsed="2.561689"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Mall Creditcard Success">Mall Creditcard Success</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
